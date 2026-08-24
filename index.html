@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASEP | ห้องเรียนของเรา</title>
+    <meta
+      name="description"
+      content="ASEP Classroom — พื้นที่รวมสมาชิก ประกาศ และเรื่องราวกิจกรรมของห้องเรียน ASEP"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">ASEP<span>.</span></div>
+      <div class="nav-links" id="navLinks">
+        <a href="#members" data-nav>สมาชิก</a>
+        <a href="#announce" data-nav>ประชาสัมพันธ์</a>
+        <a href="#gallery" data-nav>กิจกรรม</a>
+        <a href="#contact" data-nav>ติดต่อ</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="hero-brand">ASEP</div>
+        <p class="tag">gen1</p>
+      </div>
+    </header>
+
+    <div class="wave-wrap" aria-hidden="true">
+      <svg viewBox="0 0 1200 180" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#9b5cff" />
+            <stop offset="50%" stop-color="#c9a8ff" />
+            <stop offset="100%" stop-color="#4fd6ff" />
+          </linearGradient>
+        </defs>
+        <path
+          class="wave-path"
+          d="M0,90 C150,10 300,170 450,90 C600,10 750,170 900,90 C1000,40 1100,140 1200,90"
+        />
+      </svg>
+    </div>
+
+    <section class="members-section" id="members">
+      <div class="section-head reveal">
+        <div class="eyebrow">Members</div>
+        <h2>สมาชิกห้องเรียน ASEP</h2>
+        <p>
+          เลื่อนดูเพื่อนร่วมห้องทั้งหมด
+        </p>
+      </div>
+      <div class="members-track" id="membersTrack"></div>
+    </section>
+
+    <section id="announce">
+      <div class="section-head reveal">
+        <div class="eyebrow">Announcements</div>
+        <h2>ประชาสัมพันธ์</h2>
+        <p>ข่าวสาร กำหนดการ และเรื่องแจ้งเตือนล่าสุดของห้อง</p>
+      </div>
+      <div class="announce-list" id="announceList"></div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-head reveal">
+        <div class="eyebrow">Activities</div>
+        <h2>ภาพกิจกรรม</h2>
+        <p>โมเมนต์ของห้องเรียน</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item wide reveal">
+          <img src="assets/activities/IMG_8586.JPG" alt="กิจกรรม 1" />
+          <span class="gallery-cap">วันวิทยาศาสตร์</span>
+        </div>
+        <div class="gallery-item tall reveal">
+          <img src="assets/activities/IMG_8587.JPG" alt="กิจกรรม 2" />
+          <span class="gallery-cap">วันวิทยาศาสตร์</span>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="assets/activities/IMG_8585.JPG" alt="กิจกรรม 3" />
+          <span class="gallery-cap">วันวิทยาศาสตร์</span>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="assets/activities/785462163_1495368175754875_5808673009276826251_n.jpg" alt="กิจกรรม 4" />
+          <span class="gallery-cap">วันวิทยาศาสตร์</span>
+        </div>
+        <div class="gallery-item wide reveal">
+          <img src="assets/activities/92ED2C53-0F76-41F4-85C1-B67AEFFB2F78.jpg" alt="กิจกรรม 5" />
+          <span class="gallery-cap">วันคณิตศาสตร์</span>
+        </div>
+        <div class="gallery-item reveal">
+          <img src="assets/activities/2D66125F-6615-49C0-AFF3-A241826006C9.jpg" alt="กิจกรรม 6" />
+          <span class="gallery-cap">พี่น้องรหัส</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-wrap">
+        <div class="contact-grid single-column">
+          <div class="contact-card instagram-only">
+            <div class="k">Instagram</div>
+            <a class="v" href="https://www.instagram.com/4_6family.kks69?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer">@4_6family.kks69</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>by thatthep namkhotr</span>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="กลับด้านบน">↑</button>
+
+    <div class="lightbox" id="imageLightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" data-close="true"></div>
+      <div class="lightbox-panel">
+        <button class="lightbox-close" id="lightboxClose" aria-label="ปิดรูป">×</button>
+        <img id="lightboxImage" src="" alt="" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
